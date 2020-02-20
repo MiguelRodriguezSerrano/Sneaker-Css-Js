@@ -131,7 +131,7 @@ button{
     filter: contrast(1) grayscale(70%) hue-rotate(var(--hue));
     pointer-events: none;
     transition: filter 1s;
-    filter: drop-shadow(30px 10px 15px #111);
+    
 }
 
 
