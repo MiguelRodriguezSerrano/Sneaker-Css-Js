@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --hue: 90deg;
+}
+
+body{
+    background-color: #222222;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23686868' fill-opacity='0.19'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    background: linear-gradient(to top, #11998e, #38ef7d);
+    width: 350px;
+    height: 500px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 1px 1px 10px rgb(46, 46, 46);
+}
+
+.info-container{
+    background: #fff;
+    width: 350px;
+    height: 550px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(46, 46, 46);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rate{
+    margin: 20px 30px;
+}
+.price{
+    margin: 20px 30px;
+    font-size: 2em;
+    color: grey;
+    font-weight: 100;
+}
+
+.currency{
+    font-size: .5em;
+    position: relative;
+    bottom: 10px;
+    color: grey;
+}
+
+.product-name{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.sneaker-name{
+    margin-left: 30px;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.sneaker-descpt{
+    margin-left: 30px;
+    color: gray;
+    font-weight: 100;
+}
+
+.options{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+p{
+    margin: 50px 30px;
+    font-weight: 100;
+    color: gray;
+}
+
+.color-container{
+    margin: -30px 30px;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin: 4px;
+}
+
+.btn-green{
+    background: #81946b;
+}
+.btn-red{
+    background: #805053;
+}
+.btn-black{
+    background: #7d9cab;
+}
+.btn-yellow{
+    background: #644a2e;
+}
+.btn-blue{
+    background: #56527d;
+}
+.product{
+    max-width: 550px;
+    position: relative;
+    right: 100px;
+    bottom: 250px;
+    transform: rotate(30deg);
+    filter: contrast(1) grayscale(70%) hue-rotate(var(--hue));
+    pointer-events: none;
+    transition: filter 1s;
+    filter: drop-shadow(30px 10px 15px #111);
+}
+
+
+.size-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+    
+}
+.size-btn{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 25px;
+    margin-top: -30px;
+}
+
+.btn-min{
+    background: none;
+    border: 1px solid grey;
+    border-radius: 50% 0  0 50%;
+    cursor: pointer;
+}
+.btn-plus{
+    background: none;
+    border: 1px solid grey;
+    border-radius: 0 50%  50% 0;
+    cursor: pointer;
+}
+
+.btn-min:hover{
+    background: rgb(175, 175, 175);
+}
+.btn-plus:hover{
+    background: rgb(175, 175, 175); 
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.shop-btn{
+    width: 70%;
+    height: 35px;
+    border-radius: 40px;
+    font-weight: 100;
+    background:#4A00E0;
+    color: white;
+    box-shadow: 0 5px 7px #8E2DE2;
+    cursor: pointer;
+}
+.terms{
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #4A00E0;
+}
